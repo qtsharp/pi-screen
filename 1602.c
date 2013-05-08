@@ -60,6 +60,8 @@ int main (int args, char *argv[])
     {
         lcdPosition (fd, 0, 0) ;
         lcdPuts (fd, "                ") ; //清空第一行
+        lcdPosition (fd, 0, 1) ;
+        lcdPuts (fd, "                ") ; //清空第二行
         lcdPosition (fd, 0, 0) ; lcdPuts (fd, argv[1]) ; //命令行参数显示至第一行
     } 
 
@@ -83,7 +85,7 @@ int main (int args, char *argv[])
         fgets(Free,9,fp);
         fgets(Free,19,fp);
         fgets(Free,4,fp);
-        lcdPosition (fd, 6, 1);
+        lcdPosition (fd, 7, 1);
         lcdPrintf (fd, "%3d/%3dMB", atoi(Free),atoi(Total)) ;
         fclose(fp);
         
