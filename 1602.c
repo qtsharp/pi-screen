@@ -10,7 +10,7 @@
 果演示，使用wiringPi库和其附带的LCD
 库进行GPIO和1602的操作。
 
-qtsharp
+                 created by @qtsharp
 
 实例1：
     $sudo ./l602
