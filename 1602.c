@@ -1,10 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <stdint.h>
-
-#include <wiringPi.h>
-#include <lcd.h>
-
 /***********************************
 本程序用于树莓派通过GPIO连接1602的效
 果演示，使用wiringPi库和其附带的LCD
@@ -38,8 +31,12 @@
 
 ************************************/
 
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdint.h>
 
-
+#include <wiringPi.h>
+#include <lcd.h>
 
 int main (int args, char *argv[])
 {
